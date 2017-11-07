@@ -5,39 +5,70 @@
         <title>Tamal Anwar</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <!-- Side navigation menu  -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="wrapper">
+        <!-- Header section  -->
         <header id="header">
-            <div class="wrapper">
-                <h1 id="site-title">Tamal Anwar</h1>
-                <p id="site-tagline">I design, I code</p>
+            <div class="row">
+                <div class="col-title">
+                    <h1 id="site-title">Tamal Anwar</h1>
+                    <p id="site-tagline">I design, I code</p>
+                </div>
+                <div class="col-menu">
+
+                <div class="menu" onclick="openNav()">
+
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+
+                    <!-- <span >Menu</span> -->
+                </div>
             </div>
+
+
         </header>
-        <div class="wrapper">
         <main>
             <section id="welcome" class="section">
-                <p>Hello I'm Tamal. I make websites.</p>
-                <p id="hero-avatar"><img src="images/tamal-anwar.jpg" alt="Tamal Anwar"></p>
-                <button type="button" name="button">Call To Action</button>
+                <h2>Welcome</h2>
+                <p>Hello I'm Tamal. I make websites. Please have a look at my work and if you like to get some help you can hire me for freelance work:</p>
+                <div class="center">
+                    <p id="hero-avatar"><img src="images/tamal-anwar.jpg" alt="Tamal Anwar"></p>
+                    <a href="#">Get in Touch!</a>
+                </div>
 
             </section>
             <section id="work" class="section">
                 <h2>My Work</h2>
                 <div class="">
-                    Slideshow
+                    <img src="images/blogkori-theme-small.jpg" alt="blogkori theme">
                 </div>
             </section>
             <section id="services" class="section">
                 <h2>Services</h2>
                 <div class="">
                     <ul>
-                        <li>Service #</li>
-                        <li>Service #</li>
-                        <li>Service #</li>
+                        <li>Website &amp; blog design</li>
+                        <li>PSD to WordPress</li>
+                        <li>WordPress theme customization</li>
+                        <li>Consulatation</li>
                     </ul>
                 </div>
-                <button type="button" name="button">Hire Me!</button>
+                <a href="#">Hire Me!</a>
             </section>
             <section id="mailing-list" class="section">
                 <h2>Sign Up!</h2>
@@ -50,5 +81,10 @@
         <footer id="footer">
             &copy; Tamal Anwar
         </footer>
+
+
+        <script type="text/javascript" src="script.js">
+
+        </script>
     </body>
 </html>
