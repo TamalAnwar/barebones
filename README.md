@@ -1,0 +1,2 @@
+# barebones
+A barebone website
