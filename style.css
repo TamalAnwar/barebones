@@ -1,13 +1,27 @@
 /* A barebones style css */
 
+/*Color schemes
+
+Purple #5224c2
+
+Accent color
+Green yellow: #94C224
+
+
+*/
+
+
+
+
+
 html {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #dddddd;
+    background-color: #ede9f8;
     color: #333333;
 }
 
@@ -56,25 +70,44 @@ a {
 }
 
 .col-menu {
-    width: 35px;
+    width: 24%;
     float: right;
 }
 
+/*Mobile hamburger menu */
+
+.menu {
+    cursor: pointer;
+    background-color: #FFD7C9;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0 #FD8282,
+                -1px 1px 0 #FD8282,
+                -2px 2px 0 #FD8282,
+                -3px 3px 0 #FD8282,
+                -4px 4px 0 #FD8282,
+                -5px 5px 0 #FD8282;
+                /*-6px 6px 0 #587415,
+                -7px 7px 0 #587415,
+                -8px 8px 0 #587415,
+                -9px 9px 0 #587415,
+                -10px 10px 0 #587415;*/
+}
+
 .bar {
-    width: 35px;
-    height: 5px;
-    background-color: #efefef;
-    margin: 6px 0;
+    width: 90%;
+    height: 2px;
+    background-color: #94C224;
+    margin: 5px 0;
 }
 
 
 .wrapper {
     width: 480px;
+    padding: 0 1rem;
     margin: 0 auto;
-}
-
-#header {
-    padding: 1em;
 }
 
 
@@ -87,21 +120,20 @@ section {
 }
 
 section {
-    background-color: #ffffff;
+    background-color: #dcd3f2;
 }
 
 
 
 #header {
-    background-color: #2d3743;
+    background-color: #5224c2;
+    padding: 1em;
     color: #ffffff;
+    box-shadow: 0 10px 0px rgba(151,123,218,0.5);
+    z-index: 1;
+    position: relative;
 }
 
-/*Mobile hamburger menu */
-
-.menu {
-    cursor: pointer;
-}
 
 
 /*Removing the default margins from the site title and tagline */
@@ -117,6 +149,27 @@ Section*/
     /*text-align: center;*/
 }
 
+.cta-button {
+    background: #94C224;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0 #587415,
+                -1px 1px 0 #587415,
+                -2px 2px 0 #587415,
+                -3px 3px 0 #587415,
+                -4px 4px 0 #587415,
+                -5px 5px 0 #587415,
+                -6px 6px 0 #587415,
+                -7px 7px 0 #587415,
+                -8px 8px 0 #587415,
+                -9px 9px 0 #587415,
+                -10px 10px 0 #587415;
+                /*0px 0px 0 #587415;*/
+}
+
 #hero-avatar img {
     border-radius: 50%;
 }
@@ -128,7 +181,7 @@ Section*/
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 10; /* Stay on top */
     top: 0;
     right: 0;
     background-color: #333333; /* Black*/
